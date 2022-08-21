@@ -7,6 +7,34 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -63,6 +91,7 @@ body {
 .heading-primary {
     text-align: center;
     text-transform: uppercase;
+    backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -71,6 +100,12 @@ body {
     font-weight: 600;
     letter-spacing: 30px;
     margin-left: 25px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: 3; */
 }
 
 .heading-primary-second {
@@ -78,4 +113,7 @@ body {
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 13px;
+    animation-name: moveInRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
 }
