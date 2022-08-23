@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     filter: brightness(0) saturate(100%) invert(11%) sepia(6%) saturate(7500%)
         hue-rotate(179deg) brightness(95%) contrast(100%);
@@ -99,11 +99,11 @@ body::-webkit-scrollbar {
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
     border: 0.4rem solid #0a1d37;
     text-align: center;
     padding: 1rem;
@@ -120,7 +120,7 @@ body::-webkit-scrollbar {
     backface-visibility: hidden;
 }
 
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6.5rem;
     font-weight: 600;
@@ -132,7 +132,7 @@ body::-webkit-scrollbar {
     animation-timing-function: ease-out;
 }
 
-.heading-primary-second {
+.heading-primary--second {
     display: block;
     font-size: 3rem;
     font-weight: 600;
@@ -167,17 +167,17 @@ body::-webkit-scrollbar {
 }
 */
 
-.btn-white:hover {
+.btn--white:hover {
     transform: translate(-50%, -53%);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.45);
 }
 
-.btn-white:active {
+.btn--white:active {
     transform: translate(-50%, -51%);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.45);
 }
 
-.btn-white {
+.btn--white {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -202,7 +202,7 @@ body::-webkit-scrollbar {
     transition: all 0.4s;
 }
 
-.btn-white::after {
+.btn--white::after {
     background-color: #293b5f;
 }
 
@@ -211,7 +211,7 @@ body::-webkit-scrollbar {
     opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInButton 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
 }
