@@ -1,0 +1,39 @@
+.header {
+    position: relative;
+    height: 95vh;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba($color-blure-greengray, 0.6),
+            rgba($color-blure-purpleblue, 0.6)
+        ),
+        url("../img/korea_main.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.8rem;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    &__logo {
+        height: 3.5rem;
+    }
+
+    &__logo-box {
+        position: absolute;
+        filter: brightness(0) saturate(100%) invert(11%) sepia(6%)
+            saturate(7500%) hue-rotate(179deg) brightness(95%) contrast(100%);
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__text-box {
+        border: 0.4rem solid $color-text-dark;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 0.8rem;
+        color: $color-text-dark;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

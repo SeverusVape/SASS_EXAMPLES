@@ -1,0 +1,23 @@
+/* main colours
+    light sand: #ECB365     verylight blue: #8FE3CF
+    blue-gray: #064663      greengray: #256D85 
+    dark-green: #04293A     bluish-gray: #2B4865
+    dark-blue: #041C32      deep-blue: #002B5B
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This is == 1REM
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
