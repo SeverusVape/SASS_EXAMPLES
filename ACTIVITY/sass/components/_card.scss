@@ -1,0 +1,163 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 53rem;
+
+    &__side {
+        height: 53rem;
+        transition: all 0.9s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-box-shadow, 0.2);
+        padding: 10px;
+
+        &--front {
+            background-color: $color-text-white;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $tour-card-color-lightgreen,
+                    $tour-card-color-darkgreen
+                );
+            }
+
+            // &-2 {
+            // }
+
+            // &-3 {
+            // }
+
+            // &-4 {
+            // }
+
+            // &-5{
+
+            // }
+
+            // &-6{
+
+            // }
+
+            // &-7{
+
+            // }
+
+            // &-8{
+
+            // }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+    // FRONT SITE
+    &__picture {
+        background-size: cover;
+        background-position: center;
+        height: 23rem;
+        border-radius: 6px;
+        background-blend-mode: hard-light;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background-image: url("../img/shopping-1.webp"),
+                $card-background-blure;
+        }
+
+        &--2 {
+            background-image: url("../img/bbq-2.webp"), $card-background-blure;
+        }
+
+        &--3 {
+            background-image: url("../img/hiking-3.webp"),
+                $card-background-blure;
+        }
+
+        &--4 {
+            background-image: url("../img/nabourhoods-4.webp"),
+                $card-background-blure;
+        }
+
+        &--5 {
+            background-image: url("../img/food-travel-5.webp"),
+                $card-background-blure;
+        }
+
+        &--6 {
+            background-image: url("../img/buddist-tample-6.webp"),
+                $card-background-blure;
+        }
+
+        &--7 {
+            background-image: url("../img/culture-tradition-7.webp"),
+                $card-background-blure;
+        }
+
+        &--8 {
+            background-image: url("../img/bartender-8.webp"),
+                $card-background-blure;
+        }
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: 500;
+        color: $color-text-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($tour-card-color-lightgreen, 0.85),
+                rgba($tour-card-color-darkgreen, 0.85)
+            );
+        }
+    }
+
+    &__details {
+        margin-top: 1rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.2rem;
+                padding: 0.4rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
+    }
+}
