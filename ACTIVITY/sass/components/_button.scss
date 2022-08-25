@@ -7,9 +7,29 @@
         display: inline-block;
         border-radius: 10rem;
         transition: all 0.2s;
+        position: relative;
     }
+    &--gray {
+        background-color: $color-gray-light-1;
+        color: $color-text-dark;
+        font-size: 1.3rem;
+        font-weight: 700;
 
-    &--white {
+        &::after {
+            background-color: $color-gray-light-1;
+        }
+
+        &:hover {
+            transform: translate(0%, 10%);
+            box-shadow: 0 1rem 2rem rgba($color-box-shadow, 0.45);
+        }
+
+        &:active {
+            transform: translate(0%, 12%);
+            box-shadow: 0 0.5rem 1rem rgba($color-box-shadow, 0.45);
+        }
+    }
+    &--blue {
         position: absolute;
         top: 70%;
         left: 50%;

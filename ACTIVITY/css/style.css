@@ -125,9 +125,24 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  position: relative; }
 
-.btn--white {
+.btn--gray {
+  background-color: #f7f7f7;
+  color: #0a1d37;
+  font-size: 1.3rem;
+  font-weight: 700; }
+  .btn--gray::after {
+    background-color: #f7f7f7; }
+  .btn--gray:hover {
+    transform: translate(0%, 10%);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.45); }
+  .btn--gray:active {
+    transform: translate(0%, 12%);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.45); }
+
+.btn--blue {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -137,12 +152,12 @@ body {
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   font-weight: 500; }
-  .btn--white::after {
+  .btn--blue::after {
     background-color: #293b5f; }
-  .btn--white:hover {
+  .btn--blue:hover {
     transform: translate(-50%, -53%);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.45); }
-  .btn--white:active {
+  .btn--blue:active {
     transform: translate(-50%, -51%);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.45); }
 
@@ -257,6 +272,20 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #7ed56f, #395b64); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #b1e1ff, #afb4ff); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side--back-4 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+      .card__side--back-5 {
+        background-image: linear-gradient(to right bottom, #ffccb3, #f29393); }
+      .card__side--back-6 {
+        background-image: linear-gradient(to right bottom, #a5c9ca, #395b64); }
+      .card__side--back-7 {
+        background-image: linear-gradient(to right bottom, #ca4e79, #ffc18e); }
+      .card__side--back-8 {
+        background-image: linear-gradient(to right bottom, #dfdfde, #655d8a); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -282,7 +311,7 @@ body {
     .card__picture--6 {
       background-image: url("../img/buddist-tample-6.webp"), linear-gradient(to right bottom, #6a746a, #3e636e); }
     .card__picture--7 {
-      background-image: url("../img/culture-tradition-7.webp"), linear-gradient(to right bottom, #6a746a, #3e636e); }
+      background-image: url("../img/culter-tradition-7.webp"), linear-gradient(to right bottom, #6a746a, #3e636e); }
     .card__picture--8 {
       background-image: url("../img/bartender-8.webp"), linear-gradient(to right bottom, #6a746a, #3e636e); }
   .card__heading {
@@ -301,6 +330,20 @@ body {
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(57, 91, 100, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(177, 225, 255, 0.85), rgba(175, 180, 255, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading-span--4 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+    .card__heading-span--5 {
+      background-image: linear-gradient(to right bottom, rgba(255, 204, 179, 0.85), rgba(242, 147, 147, 0.85)); }
+    .card__heading-span--6 {
+      background-image: linear-gradient(to right bottom, rgba(165, 201, 202, 0.85), rgba(57, 91, 100, 0.85)); }
+    .card__heading-span--7 {
+      background-image: linear-gradient(to right bottom, rgba(202, 78, 121, 0.85), rgba(255, 193, 142, 0.85)); }
+    .card__heading-span--8 {
+      background-image: linear-gradient(to right bottom, rgba(223, 223, 222, 0.85), rgba(101, 93, 138, 0.85)); }
   .card__details {
     margin-top: 1rem; }
     .card__details ul {
@@ -313,6 +356,22 @@ body {
         padding: 0.4rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .card__price-box {
+    text-align: center;
+    margin-bottom: 3rem; }
+  .card__price-only {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2rem; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 800; }
 
 .header {
   position: relative;

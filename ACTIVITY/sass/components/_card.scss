@@ -32,30 +32,61 @@
                 );
             }
 
-            // &-2 {
-            // }
+            &-2 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $tour-card-color-greengray,
+                    $tour-card-color-purpleblue
+                );
+            }
 
-            // &-3 {
-            // }
+            &-3 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $tour-card-color-yellow,
+                    $tour-card-color-orange
+                );
+            }
 
-            // &-4 {
-            // }
+            &-4 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $tour-card-color-blue,
+                    $tour-card-color-wiolet
+                );
+            }
 
-            // &-5{
+            &-5 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $tour-card-color-pink,
+                    $tour-card-color-peach
+                );
+            }
 
-            // }
+            &-6 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $tour-card-color-gray,
+                    $tour-card-color-darkgreen
+                );
+            }
 
-            // &-6{
+            &-7 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $tour-card-color-lip,
+                    $tour-card-color-send
+                );
+            }
 
-            // }
-
-            // &-7{
-
-            // }
-
-            // &-8{
-
-            // }
+            &-8 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    $tour-card-color-light,
+                    $tour-card-color-velvet
+                );
+            }
         }
     }
 
@@ -106,7 +137,7 @@
         }
 
         &--7 {
-            background-image: url("../img/culture-tradition-7.webp"),
+            background-image: url("../img/culter-tradition-7.webp"),
                 $card-background-blure;
         }
 
@@ -140,6 +171,60 @@
                 rgba($tour-card-color-darkgreen, 0.85)
             );
         }
+        &--2 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($tour-card-color-greengray, 0.85),
+                rgba($tour-card-color-purpleblue, 0.85)
+            );
+        }
+        &--3 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($tour-card-color-yellow, 0.85),
+                rgba($tour-card-color-orange, 0.85)
+            );
+        }
+
+        &--4 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($tour-card-color-blue, 0.85),
+                rgba($tour-card-color-wiolet, 0.85)
+            );
+        }
+
+        &--5 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($tour-card-color-pink, 0.85),
+                rgba($tour-card-color-peach, 0.85)
+            );
+        }
+
+        &--6 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($tour-card-color-gray, 0.85),
+                rgba($tour-card-color-darkgreen, 0.85)
+            );
+        }
+
+        &--7 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($tour-card-color-lip, 0.85),
+                rgba($tour-card-color-send, 0.85)
+            );
+        }
+
+        &--8 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($tour-card-color-light, 0.85),
+                rgba($tour-card-color-velvet, 0.85)
+            );
+        }
     }
 
     &__details {
@@ -159,5 +244,29 @@
                 }
             }
         }
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__price-box {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__price-only {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 800;
     }
 }
