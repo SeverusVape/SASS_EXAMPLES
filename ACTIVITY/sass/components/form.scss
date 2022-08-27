@@ -1,0 +1,49 @@
+.form {
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-family: inherit;
+        color: inherit;
+        font-size: 1.7rem;
+        padding: 1.5rem 2rem;
+        border-radius: 4px;
+        background-color: rgba($color-text-white, 0.5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-box-shadow, 0.4);
+            border-bottom: 3px solid $valid-green;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $tour-card-color-lip;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #999;
+        }
+    }
+
+    &__label {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: $color-text-dark;
+        margin-left: 5rem;
+        margin-top: 0.7rem;
+        display: block;
+        transition: all 0.3s;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}

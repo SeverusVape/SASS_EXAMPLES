@@ -435,6 +435,44 @@ body {
     height: 100%;
     object-fit: cover; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.7rem;
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  margin: 0 auto; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid #14c38e; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ca4e79; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0a1d37;
+  margin-left: 5rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
 .header {
   position: relative;
   height: 95vh;
@@ -510,3 +548,20 @@ body {
 .section-stories {
   position: relative;
   padding: 15rem 0; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #ca4e79, #ffc18e); }
+
+.book {
+  background-image: linear-gradient(100deg, transparent 0%, transparent 50%, rgba(223, 223, 222, 0.9) 50%), url("../img/street.webp");
+  background-size: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0.5rem 3rem 0.2rem rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 0 auto;
+  height: 50rem; }
+  .book__form {
+    float: right;
+    width: 50%;
+    padding: 6rem; }
