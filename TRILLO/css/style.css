@@ -112,6 +112,16 @@ body {
   .user-nav__user-name {
     margin-left: 0.5rem; }
 
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem; }
+
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--color-gray-light-4); }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -133,8 +143,12 @@ body {
 
 .sidebar {
   background-color: var(--color-gray-dark-1);
-  flex: 0 0 18%; }
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .hotel-view {
   background-color: #fff;
-  flex: 1; }
+  flex: 1;
+  height: 80rem; }
