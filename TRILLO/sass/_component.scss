@@ -182,13 +182,10 @@
     color: var(--color-gray-light-4);
 }
 
-// * MAIN SECTION /////
+// * MAIN SECTION  * OVERVIEW /////
 
 .gallery {
     display: flex;
-
-    &__item {
-    }
 
     &__photo {
         width: 100%;
@@ -296,3 +293,7 @@
         box-shadow: none;
     }
 }
+
+// * MAIN SECTION  * DETAIL /////
+
+// * MAIN SECTION  * OVERVIEW /////
